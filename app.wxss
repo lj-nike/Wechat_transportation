@@ -12,3 +12,8 @@ page{
   /* 定义统一字体大小 */
   font-size: 28rpx;
 }
+
+/* 全局的图片样式 */
+image{
+  width: 100%;
+}
