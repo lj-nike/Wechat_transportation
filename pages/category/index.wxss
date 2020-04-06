@@ -1,0 +1,20 @@
+page {
+  height: 100%;
+}
+.cates {
+  height: 100%;
+}
+.cates .cates_container {
+  /* height: calc ( 100vh - 45px ); */
+  height: 100%;
+  display: flex;
+}
+.cates .cates_container .left_menu {
+
+  flex: 2;
+  background-color: aqua;
+}
+.cates .cates_container .right_content {
+  flex: 5;
+  background-color: greenyellow;
+}
