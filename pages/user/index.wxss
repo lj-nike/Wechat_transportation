@@ -1,1 +1,137 @@
 /* pages/user/index.wxss */
+page {
+  background-color: #ccc;
+  font-weight: bold;
+}
+.user_info_wrap {
+  position: relative;
+  height: 45vh;
+  overflow: hidden;
+  background-color: var(--themeColor);
+}
+.user_info_wrap .user_img_wrap {
+  position: relative;
+}
+.user_info_wrap .user_img_wrap .user_bg {
+  height: 50vh;
+  filter: blur(10rpx);
+}
+.user_info_wrap .user_img_wrap .user_info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  text-align: center;
+}
+.user_info_wrap .user_img_wrap .user_info .user_icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_img_wrap .user_info .user_name {
+  color: #fff;
+}
+.user_info_wrap button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+}
+.user_content {
+  position: relative;
+  background-color: #ccc;
+  height: 100%;
+}
+.user_content .user_main {
+  position: absolute;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  top: -40rpx;
+  padding-bottom: 100rpx;
+}
+.user_content .user_main .history_wrap {
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  border: 1rpx #ccc;
+  border-radius: 20rpx;
+}
+.user_content .user_main .history_wrap navigator {
+  flex: 1;
+  padding: 10rpx;
+  font-weight: bold;
+}
+.user_content .user_main .history_wrap navigator .his_num {
+  color: var(--themeColor);
+}
+.user_content .user_main .history_wrap navigator .his_name {
+  font-weight: bold;
+}
+.user_content .user_main .order_wrap {
+  margin: 20rpx 0;
+  background-color: #fff;
+  border: 1rpx #ccc;
+  border-radius: 20rpx;
+}
+.user_content .user_main .order_wrap .ordertitle {
+  padding: 12rpx;
+  font-weight: bold;
+  padding: 10rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.user_content .user_main .order_wrap .content {
+  display: flex;
+  text-align: center;
+}
+.user_content .user_main .order_wrap .content navigator {
+  flex: 1;
+  padding: 10rpx 0;
+  font-weight: bold;
+}
+.user_content .user_main .order_wrap .content navigator .order_num {
+  font-weight: normal;
+  font-size: 50rpx;
+  color: var(--themeColor);
+}
+.user_content .user_main .order_wrap .content navigator .order_name {
+  font-weight: bold;
+}
+.user_content .user_main .shouhuo_wrap {
+  background-color: #fff;
+  padding: 15rpx;
+  padding-left: 20rpx;
+  margin-bottom: 20rpx;
+  border: 1rpx #ccc;
+  border-radius: 20rpx;
+}
+.user_content .user_main .about_us {
+  background-color: #fff;
+  padding: 10rpx;
+  margin-bottom: 20rpx;
+  border: 1rpx #ccc;
+  border-radius: 20rpx;
+}
+.user_content .user_main .about_us .contact_wrap {
+  border-bottom: 2rpx solid #ccc;
+}
+.user_content .user_main .about_us .contact_wrap .contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx;
+}
+.user_content .user_main .about_us .yijian {
+  border-bottom: 2rpx solid #ccc;
+  padding: 10rpx;
+}
+.user_content .user_main .about_us .guanyu {
+  padding: 10rpx;
+}
+.user_content .user_main .tuijian {
+  background-color: #fff;
+  padding: 10rpx;
+  padding-left: 20rpx;
+  margin-bottom: 20rpx;
+  border: 1rpx #ccc;
+  border-radius: 20rpx;
+}

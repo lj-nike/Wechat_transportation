@@ -47,11 +47,15 @@
 .index_floor .floor_group .floor_title{
   font-weight: bolder;
   width: 100%;
+  color: rgba(255, 0, 0, 0.679);
+  margin-bottom: 10rpx;
 }
 .index_floor .floor_group .floor_list navigator{
   float: left;
   width: 33.33%;
   height: 100%;
+  border: 2rpx solid #ccc;
+  padding: 4rpx;
 }
 
 .index_floor .floor_group .floor_list navigator image{
