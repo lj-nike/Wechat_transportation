@@ -10,7 +10,7 @@ page {
   display: flex;
 }
 .cates .cates_container .left_menu {
-
+  border-right: 2rpx solid #ccc;
   flex: 2;
   /* background-color: aqua; */
 }

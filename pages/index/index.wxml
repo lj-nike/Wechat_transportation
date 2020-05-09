@@ -1,4 +1,5 @@
 <view class="lxs_index search_input">
+	
   <!-- 搜索框开始 -->
   <SearchInput></SearchInput>
   <!-- 搜索框结束 -->
