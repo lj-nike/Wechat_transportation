@@ -12,13 +12,14 @@
     "pages/feedback/index",
     "pages/login/index",
     "pages/auth/index",
-    "pages/pay/index"
+    "pages/chat/chat",
+    "pages/chat_index/chat_index"
 
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#eb4450",
-    "navigationBarTitleText": "L先生代购",
+    "navigationBarTitleText": "太尝龟秒杀平台",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -45,6 +46,12 @@
         "text": "购物车",
         "iconPath": "icons/cart.png",
         "selectedIconPath": "icons/cart-o.png"
+      },
+      {
+        "pagePath": "pages/chat_index/chat_index",
+        "text": "聊天",
+        "iconPath": "icons/chat.png",
+        "selectedIconPath": "icons/chat_select.png"
       },
       {
         "pagePath": "pages/user/index",

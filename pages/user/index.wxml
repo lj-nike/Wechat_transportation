@@ -13,7 +13,7 @@
     </view>
 
     <view wx:else>
-        <navigator url="/pages/login/index"  open-type="navigate">
+        <navigator url="#"  open-type="navigate">
             <button style = "border-radius: 29rpx;"open-type = "getUserInfo"  bindgetuserinfo = "getProfile" plain>登录</button>
         </navigator>
     </view>

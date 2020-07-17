@@ -21,7 +21,8 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"nodeModules": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.4",
@@ -62,6 +63,19 @@
 					"name": "pages/cart/index",
 					"pathName": "pages/user/index",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/user/index",
+					"pathName": "pages/user/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chat_index/chat_index",
+					"pathName": "pages/chat_index/chat_index",
 					"scene": null
 				}
 			]

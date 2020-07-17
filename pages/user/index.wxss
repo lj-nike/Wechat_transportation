@@ -1,6 +1,6 @@
 /* pages/user/index.wxss */
 page {
-  background-color: #ccc;
+  background-color: #e6e6e6;
   font-weight: bold;
 }
 .user_info_wrap {
@@ -39,7 +39,7 @@ page {
 }
 .user_content {
   position: relative;
-  background-color: #ccc;
+  background-color: #e6e6e6;
   height: 100%;
 }
 .user_content .user_main {
