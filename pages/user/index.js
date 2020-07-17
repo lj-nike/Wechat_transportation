@@ -18,6 +18,12 @@ Page({
   //     userinfo
   //   })
   // }
+  toCollect(){
+    wx.navigateTo({
+      url: '../collect/index'
+    })
+  },
+
   getProfile(e){
     wx.setStorageSync("userInfo",e.detail.userInfo);
     

@@ -26,9 +26,9 @@
     </view>
     <view class="form_btn_wrap">
       <button bindtap="handleFormSubmit"  type="warn" >
-        <icon  type="success_no_circle" size="23" color="white">
+        <!-- <icon  type="success_no_circle" size="23" color="white">
           
-        </icon>
+        </icon> -->
           
         提交
       </button>

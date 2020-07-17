@@ -31,7 +31,7 @@
             </navigator>
             <navigator class="" open-type="navigate">
                 <view class="his_num">0</view>
-                <view class="hisname">收藏的商品</view>
+                <view class="hisname" bindtap="toCollect">收藏的商品</view>
             </navigator>
             <navigator class="" open-type="navigate">
                 <view class="his_num">0</view>
@@ -48,19 +48,20 @@
         <view class="order_wrap">
             <view class="ordertitle">我的订单</view>
             <view class="content">
-                <navigator class="" open-type="navigate">
+                <navigator class="" open-type="navigate" url="../order/index">
                     <view class="order_num iconfont icon-logooo_huabanfuben"></view>
-                    <view class="order_name">全部订单</view>
+                        <view class="order_name">全部订单</view>  
                 </navigator>
-                <navigator class="" open-type="navigate">
+                <navigator class="" open-type="navigate" url="../order/index">
                     <view class="order_num iconfont icon-fukuantongzhi"></view>
                     <view class="order_name">待付款</view>
+                    
                 </navigator>
-                <navigator class="" open-type="navigate">
+                <navigator class="" open-type="navigate" url="../order/index">
                     <view class="order_num iconfont icon-shouhuodizhi3"></view>
                     <view class="order_name">永不发货</view>
                 </navigator>
-                <navigator class="" open-type="navigate">
+                <navigator class="" open-type="navigate" url="../order/index">
                     <view class="order_num iconfont icon-tuihuotuikuan_dianpu"></view>
                     <view class="order_name">概不退款</view>
                 </navigator>
@@ -84,10 +85,12 @@
                     </view>
                 </view>
             </view>
-    
-            <view class="yijian">
+            <navigator url="../feedback/index">
+            <view class="yijian" >
                 意见反馈
             </view>
+            </navigator>
+            
     
             <view class="guanyu">
                 关于我们
