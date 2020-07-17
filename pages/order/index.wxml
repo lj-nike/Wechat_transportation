@@ -1,5 +1,5 @@
 <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange" >
-
+  <view>暂时还没有订单</view>
   <view class="order_main">
     <view 
     wx:for="{{orders}}"

@@ -11,7 +11,7 @@
             <!-- 复选框 -->
             <view class="cart_chk_wrap">
                 <checkbox-group bindchange="">
-                    <checkbox class="" >
+                    <checkbox class="" checked="true">
                         
                     </checkbox>
                       
@@ -29,15 +29,15 @@
                     丽普司肽冻干粉寡肽原液去淡化祛痘印痘坑修复精华旗舰店官网正品
                 </view>
                 <view class="goods_price_wrap">
-                    <view class="goods_price">$99</view>
+                    <view class="goods_price">${{price1}}</view>
                     <view class="cart_num_tool">
-                        <view class="num_edit">
+                        <view class="num_edit" bindtap="num1_jian">
                             -
                         </view>
                         <view class="goods_num">
-                            1
+                            {{num1}}
                         </view>
-                        <view class="num_edit">
+                        <view class="num_edit" bindtap="num1_add">
                             +
                         </view>
                     </view>
@@ -53,7 +53,7 @@
             <!-- 复选框 -->
             <view class="cart_chk_wrap">
                 <checkbox-group bindchange="">
-                    <checkbox class="" >
+                    <checkbox class="" checked="true">
                         
                     </checkbox>
                       
@@ -71,15 +71,15 @@
                     四核八核i7吃鸡游戏组装电脑主机DIY独显LOL台式机办公i5整机全套
                 </view>
                 <view class="goods_price_wrap">
-                    <view class="goods_price">$89</view>
+                    <view class="goods_price">${{price2}}</view>
                     <view class="cart_num_tool">
-                        <view class="num_edit">
+                        <view class="num_edit" bindtap="num2_jian">
                             -
                         </view>
                         <view class="goods_num">
-                            2
+                            {{num2}}
                         </view>
-                        <view class="num_edit">
+                        <view class="num_edit" bindtap="num2_add">
                             +
                         </view>
                     </view>
@@ -95,7 +95,7 @@
             <!-- 复选框 -->
             <view class="cart_chk_wrap">
                 <checkbox-group bindchange="">
-                    <checkbox class="" >
+                    <checkbox class="" checked="true">
                         
                     </checkbox>
                       
@@ -113,15 +113,15 @@
                     夏季莫代尔冰丝短袖t恤polo衫男装翻领新品丝光棉纯色短袖打底衫
                 </view>
                 <view class="goods_price_wrap">
-                    <view class="goods_price">$199</view>
+                    <view class="goods_price">${{price3}}</view>
                     <view class="cart_num_tool">
-                        <view class="num_edit">
+                        <view class="num_edit" bindtap="num3_jian">
                             -
                         </view>
                         <view class="goods_num">
-                            1
+                            {{num3}}
                         </view>
-                        <view class="num_edit">
+                        <view class="num_edit" bindtap="num3_add">
                             +
                         </view>
                     </view>
@@ -137,7 +137,7 @@
             <!-- 复选框 -->
             <view class="cart_chk_wrap">
                 <checkbox-group bindchange="">
-                    <checkbox class="" >
+                    <checkbox class="" checked="true">
                         
                     </checkbox>
                       
@@ -155,15 +155,15 @@
                     光希玻尿酸精华液面部精华紧致补水肌底液保湿护肤品肌肤水油平衡 
                 </view>
                 <view class="goods_price_wrap">
-                    <view class="goods_price">$19</view>
+                    <view class="goods_price">${{price4}}</view>
                     <view class="cart_num_tool">
-                        <view class="num_edit">
+                        <view class="num_edit" bindtap="num4_jian">
                             -
                         </view>
                         <view class="goods_num">
-                            1
+                            {{num4}}
                         </view>
-                        <view class="num_edit">
+                        <view class="num_edit" bindtap="num4_add">
                             +
                         </view>
                     </view>
@@ -195,7 +195,7 @@
     <!-- 总价格 -->
     <view class="total_price_wrap">
         <view class="total_price">
-            合计:<text class="total_price_text" >$387</text>
+            合计:<text class="total_price_text" >${{price}}</text>
         </view>
 
 
@@ -205,7 +205,7 @@
         
     </view>
     
-    <view class="order_pay_wrap">结算(4)</view>
+    <view class="order_pay_wrap">结算({{num1+num2+num3+num4}})</view>
 
     
       

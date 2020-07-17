@@ -16,7 +16,7 @@
 
   <!-- 导航开始 -->
 <view class="index_cate"  >
-  <navigator>
+  <navigator url="../category/index">
     <view>
       <image mode="widthFix" src="../../icons/fenlei.png"></image>
       分类
@@ -51,7 +51,7 @@
         优选好品
       </view>
       <view class="floor_list clear_fix">
-        <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i3/79200401/TB28DloX5C9MuFjSZFoXXbUzFXa_!!79200401.jpg_500x500q90.jpg" ></image></navigator>
+        <navigator  bindtap="toOrder" url="../order/index.wxml"><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i3/79200401/TB28DloX5C9MuFjSZFoXXbUzFXa_!!79200401.jpg_500x500q90.jpg" ></image></navigator>
         <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i4/319960493/TB2QSYcc9tYBeNjSspkXXbU8VXa_!!319960493.jpg_500x500q90.jpg"></image></navigator>
         <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i1/57256200/TB2oZ.ts77mBKNjSZFyXXbydFXa_!!57256200.jpg_500x500q90.jpg"></image></navigator>
         <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i1/3593596905/O1CN01cysdHu20sXOAMz7QN_!!3593596905.jpg_500x500q90.jpg"></image></navigator>

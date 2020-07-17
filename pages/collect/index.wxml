@@ -6,6 +6,7 @@
       <text class="collect_tips">正在热卖</text>
       <text class="collect_tips">即将上线</text>
     </view>
+    <view>暂时还没有收藏商品</view>
     <view class="collect_content">
       <navigator class="goods_item" wx:for="{{collect}}" wx:key="goods_id"
         url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
