@@ -21,21 +21,21 @@
 
             <!-- 商品图片 -->
             <navigator class="cart_img_wrap" open-type="navigate">
-                <image class="" src="../../img/1.jpg" mode="widthFix" />   
+                <image class="" src="../../img/4.jpg" mode="widthFix" />   
             </navigator>
 
             <view class="cart_info_wrap">
                 <view class="goods_name">
-                    开始放假啊恩收快递费建安费是党和水电费按键 萨芬额是 是否354 是否34235  是否曲儿地方阿瑟 
+                    丽普司肽冻干粉寡肽原液去淡化祛痘印痘坑修复精华旗舰店官网正品
                 </view>
                 <view class="goods_price_wrap">
-                    <view class="goods_price">$不要钱的亲</view>
+                    <view class="goods_price">$99</view>
                     <view class="cart_num_tool">
                         <view class="num_edit">
                             -
                         </view>
                         <view class="goods_num">
-                            10
+                            1
                         </view>
                         <view class="num_edit">
                             +
@@ -68,16 +68,16 @@
 
             <view class="cart_info_wrap">
                 <view class="goods_name">
-                    开始放假啊恩收快递费建安费是党和水电费按键 萨芬额是 是否354 是否34235  是否曲儿地方阿瑟 
+                    四核八核i7吃鸡游戏组装电脑主机DIY独显LOL台式机办公i5整机全套
                 </view>
                 <view class="goods_price_wrap">
-                    <view class="goods_price">$不要钱的亲</view>
+                    <view class="goods_price">$89</view>
                     <view class="cart_num_tool">
                         <view class="num_edit">
                             -
                         </view>
                         <view class="goods_num">
-                            10
+                            2
                         </view>
                         <view class="num_edit">
                             +
@@ -105,21 +105,21 @@
 
             <!-- 商品图片 -->
             <navigator class="cart_img_wrap" open-type="navigate">
-                <image class="" src="../../img/1.jpg" mode="widthFix" />   
+                <image class="" src="../../img/2.jpg" mode="widthFix" />   
             </navigator>
 
             <view class="cart_info_wrap">
                 <view class="goods_name">
-                    开始放假啊恩收快递费建安费是党和水电费按键 萨芬额是 是否354 是否34235  是否曲儿地方阿瑟 
+                    夏季莫代尔冰丝短袖t恤polo衫男装翻领新品丝光棉纯色短袖打底衫
                 </view>
                 <view class="goods_price_wrap">
-                    <view class="goods_price">$不要钱的亲</view>
+                    <view class="goods_price">$199</view>
                     <view class="cart_num_tool">
                         <view class="num_edit">
                             -
                         </view>
                         <view class="goods_num">
-                            10
+                            1
                         </view>
                         <view class="num_edit">
                             +
@@ -147,21 +147,21 @@
 
             <!-- 商品图片 -->
             <navigator class="cart_img_wrap" open-type="navigate">
-                <image class="" src="../../img/1.jpg" mode="widthFix" />   
+                <image class="" src="../../img/3.jpg" mode="widthFix" />   
             </navigator>
 
             <view class="cart_info_wrap">
                 <view class="goods_name">
-                    开始放假啊恩收快递费建安费是党和水电费按键 萨芬额是 是否354 是否34235  是否曲儿地方阿瑟 
+                    光希玻尿酸精华液面部精华紧致补水肌底液保湿护肤品肌肤水油平衡 
                 </view>
                 <view class="goods_price_wrap">
-                    <view class="goods_price">$不要钱的亲</view>
+                    <view class="goods_price">$19</view>
                     <view class="cart_num_tool">
                         <view class="num_edit">
                             -
                         </view>
                         <view class="goods_num">
-                            10
+                            1
                         </view>
                         <view class="num_edit">
                             +
@@ -195,7 +195,7 @@
     <!-- 总价格 -->
     <view class="total_price_wrap">
         <view class="total_price">
-            合计:<text class="total_price_text" >$99999</text>
+            合计:<text class="total_price_text" >$387</text>
         </view>
 
 
@@ -205,7 +205,7 @@
         
     </view>
     
-    <view class="order_pay_wrap">结算(2)</view>
+    <view class="order_pay_wrap">结算(4)</view>
 
     
       

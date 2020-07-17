@@ -76,6 +76,13 @@
 					"id": -1,
 					"name": "pages/chat_index/chat_index",
 					"pathName": "pages/chat_index/chat_index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order/index",
+					"pathName": "pages/order/index",
 					"scene": null
 				}
 			]
