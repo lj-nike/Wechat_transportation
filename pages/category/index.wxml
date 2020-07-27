@@ -31,7 +31,6 @@
                     <text class="delimiter">/</text>
                 </view>
 
-
                 <view class="goods_list">
                     <navigator  open-type="navigate"
                         wx:for = "{{item1.children}}"

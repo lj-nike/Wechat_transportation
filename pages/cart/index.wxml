@@ -95,7 +95,7 @@
             <!-- 复选框 -->
             <view class="cart_chk_wrap">
                 <checkbox-group bindchange="">
-                    <checkbox class="" checked="true">
+                    <checkbox class="" checked="true" bindtap="isCheck3">
                         
                     </checkbox>
                       
@@ -137,7 +137,7 @@
             <!-- 复选框 -->
             <view class="cart_chk_wrap">
                 <checkbox-group bindchange="">
-                    <checkbox class="" checked="true">
+                    <checkbox class="" checked="true" bindtap="isCheck4">
                         
                     </checkbox>
                       
@@ -183,7 +183,7 @@
     <view class="all_chk_wrap">
         <checkbox-group bindchange="">
 
-            <checkbox class="" value="" >
+            <checkbox class="" value="" bindtap="isCheck_all">
                 全选
             </checkbox>
               
@@ -205,7 +205,7 @@
         
     </view>
     
-    <view class="order_pay_wrap">结算({{num1+num2+num3+num4}})</view>
+    <view class="order_pay_wrap">结算({{num}})</view>
 
     
       

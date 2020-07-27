@@ -9,20 +9,27 @@ Page({
     num2:2,
     num3:1,
     num4:1,
+    num:0,
     price1:89,
     price2:99,
     price3:199,
     price4:29,
-    price:0
-
+    price:0,
+    flag1:1,
+    flag2:1,
+    flag3:1,
+    flag4:1,
+    flag_all:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    
     this.setData({
       price:this.data.price1+this.data.price2+this.data.price3+this.data.price4,
+      num:this.data.num1+this.data.num2+this.data.num3+this.data.num4,
     })
   },
 
@@ -53,34 +60,76 @@ Page({
   onUnload: function () {
 
   },
-
-  
+  isCheck_all(){
+  },
+  isCheck3(){
+    
+    if(this.data.flag3 == 1){
+      
+      this.setData({
+        price:this.data.price-this.data.price3 * this.data.num3,
+        num:this.data.num-this.data.num3,
+        flag3:0
+      });
+    }
+    else{
+      
+      this.setData({
+        price:this.data.price+this.data.price3 * this.data.num3,
+        num:this.data.num+this.data.num3,
+        flag3:1
+      })
+    }
+  },
+  isCheck4(){
+    
+    if(this.data.flag4 == 1){
+      
+      this.setData({
+        price:this.data.price-this.data.price4 * this.data.num4,
+        num:this.data.num-this.data.num4,
+        flag4:0
+      });
+    }
+    else{
+     
+      this.setData({
+        price:this.data.price+this.data.price4 * this.data.num4,
+        num:this.data.num+this.data.num4,
+        flag4:1
+      })
+    }
+  },
   num1_jian(){
     let price = this.data.price - 89;
     this.setData({
       num1:--this.data.num1,
-      price:price
+      price:price,
+      num:--this.data.num,
     })
   },
   num1_add(){
     let price = this.data.price + 89;
     this.setData({
       num1:++this.data.num1,
-      price:price
+      price:price,
+      num:++this.data.num,
     })
   },
   num2_jian(){
     let price = this.data.price - 99;
     this.setData({
       num2:--this.data.num2,
-      price:price
+      price:price,
+      num:--this.data.num,
     })
   },
   num2_add(){
     let price = this.data.price + 99;
     this.setData({
       num2:++this.data.num2,
-      price:price
+      price:price,
+      num:++this.data.num,
     })
   },
   num3_jian(){
@@ -88,7 +137,8 @@ Page({
 
     this.setData({
       num3:--this.data.num3,
-      price:price
+      price:price,
+      num:--this.data.num,
     });
   },
   num3_add(){
@@ -96,7 +146,8 @@ Page({
 
     this.setData({
       num3:++this.data.num3,
-      price:price
+      price:price,
+      num:++this.data.num,
     })
   },
   num4_jian(){
@@ -104,7 +155,8 @@ Page({
 
     this.setData({
       num4:--this.data.num4,
-      price:price
+      price:price,
+      num:--this.data.num,
     })
   },
   num4_add(){
@@ -112,7 +164,8 @@ Page({
 
     this.setData({
       num4:++this.data.num4,
-      price:price
+      price:price,
+      num:++this.data.num,
     })
   },
   onPullDownRefresh: function () {
