@@ -26,7 +26,7 @@ Page({
 
   getProfile(e){
     wx.setStorageSync("userInfo",e.detail.userInfo);
-    
+    console.log(e.detail.userInfo);
     this.setData({
       "userinfo":e.detail.userInfo
     })

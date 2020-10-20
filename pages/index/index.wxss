@@ -1,11 +1,17 @@
 
 .index_swiper{
+  margin: 10rpx auto;
   width: 750rpx;
   /* height: calc(750rpx * 280 / 520); */
-  height: 340rpx;
+  height: 300rpx;
+  border-radius: 20rpx;
+   text-align: center;
+   justify-content: center;
+   overflow: hidden;
 }
 .index_swiper swiper-item image{
   width: 100%;
+  height: 100%;
 }
 .clear_fix::after{
   content:"";
@@ -14,12 +20,12 @@
 }
 .index_cate{
   margin: 20rpx auto;
-
   text-align: center;
   padding: 5rpx;
   background-color: #f3f3f3;
   justify-content: center;
   align-items: center;
+  border-radius: 20rpx;
 }
 .index_cate navigator{
   display: inline-block;
@@ -39,26 +45,4 @@
 .index_cate navigator image{
   width: 100%;
 
-}
-.index_floor{
-  overflow: hidden;
-  margin-bottom: 80rpx;
-}
-.index_floor .floor_group .floor_title{
-  font-weight: bolder;
-  width: 100%;
-  color: rgba(255, 0, 0, 0.679);
-  margin-bottom: 10rpx;
-}
-.index_floor .floor_group .floor_list navigator{
-  float: left;
-  width: 33.33%;
-  height: 100%;
-  border: 2rpx solid #ccc;
-  padding: 4rpx;
-}
-
-.index_floor .floor_group .floor_list navigator image{
-  width: 100%;
-  height: 100%;
 }

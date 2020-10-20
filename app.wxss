@@ -8,7 +8,7 @@ page,view,text,swiper,swiper-item,image,navigator{
 
 page{
   /* 定义主题颜色 */
-  --themeColor:#eb4450;
+  --themeColor:#1470e9;
   /* 定义统一字体大小 */
   font-size: 28rpx;
 }

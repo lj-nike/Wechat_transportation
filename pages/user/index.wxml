@@ -23,47 +23,28 @@
 
 <view class="user_content">
     <view class="user_main">
-        <!-- 历史足迹 -->
-        <view class="history_wrap">
-            <navigator class="" open-type="navigate">
-                <view class="his_num">0</view>
-                <view class="hisname">收藏的店铺</view>
-            </navigator>
-            <navigator class="" open-type="navigate">
-                <view class="his_num">0</view>
-                <view class="hisname" bindtap="toCollect">收藏的商品</view>
-            </navigator>
-            <navigator class="" open-type="navigate">
-                <view class="his_num">0</view>
-                <view class="hisname">关注的商品</view>
-            </navigator>
-            <navigator class="" open-type="navigate">
-                <view class="his_num">0</view>
-                <view class="hisname">我的足迹</view>
-            </navigator>
-              
-        </view>
+        
 
         <!-- 订单 -->
         <view class="order_wrap">
-            <view class="ordertitle">我的订单</view>
+            <!-- <view class="ordertitle"></view> -->
             <view class="content">
                 <navigator class="" open-type="navigate" url="../order/index">
-                    <view class="order_num iconfont icon-logooo_huabanfuben"></view>
-                        <view class="order_name">全部订单</view>  
+                    <view ><image  class="option" src="../../img/position.png"></image></view>
+                        <view class="order_name">我的行程</view>  
                 </navigator>
                 <navigator class="" open-type="navigate" url="../order/index">
-                    <view class="order_num iconfont icon-fukuantongzhi"></view>
-                    <view class="order_name">待付款</view>
+                    <view ><image  class="option" src="../../img/Zhifu.png"></image></view>
+                    <view class="order_name">交易明细</view>
                     
                 </navigator>
                 <navigator class="" open-type="navigate" url="../order/index">
-                    <view class="order_num iconfont icon-shouhuodizhi3"></view>
-                    <view class="order_name">永不发货</view>
+                    <view ><image  class="option" src="../../img/Fapiao.png"></image></view>
+                    <view class="order_name">我的发票</view>
                 </navigator>
                 <navigator class="" open-type="navigate" url="../order/index">
-                    <view class="order_num iconfont icon-tuihuotuikuan_dianpu"></view>
-                    <view class="order_name">概不退款</view>
+                    <view ><image  class="option" src="../../img/Zhifu2.png"></image></view>
+                    <view class="order_name">支付管理</view>
                 </navigator>
             </view>
             
@@ -72,22 +53,25 @@
 
         <!-- 售后地址 -->
         <view class="shouhuo_wrap">
-            收货地址管理
+            卡包管理
         </view>
         <view class="about_us">
             <view class="contact_wrap">
                 <view class="contact">
-                    <view class="kefu">
-                        联系客服小姐姐
-                    </view>
-                    <view class="number">
-                        400-6184-40000
-                    </view>
+                    <navigator url="../feedback/index">
+                        <view class="kefu">
+                            帮助与反馈
+                        </view>
+                        <view class="number">
+                            400-6184-40000
+                        </view>
+                    </navigator>
+                    
                 </view>
             </view>
-            <navigator url="../feedback/index">
+            <navigator >
             <view class="yijian" >
-                意见反馈
+                邀请好友
             </view>
             </navigator>
             

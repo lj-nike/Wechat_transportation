@@ -7,9 +7,9 @@
   <!--pages/demo02/demo02.wxml-->
 <swiper  class="index_swiper" autoplay="true" circular="true" interval="2000" indicator-dots="true">
 
-    <swiper-item ><navigator><image  mode="widthFix" src="https://img.alicdn.com/tps/i4/TB1Q8GeAHY1gK0jSZTESutDQVXa.jpg"/></navigator></swiper-item>
-    <swiper-item ><navigator><image  mode="widthFix" src="https://img.alicdn.com/simba/img/TB1NrmuAHY1gK0jSZTESutDQVXa.jpg"/></navigator></swiper-item>
-    <swiper-item ><navigator><image  mode="widthFix" src="https://img.alicdn.com/simba/img/TB1tReXzUz1gK0jSZLeSuv9kVXa.jpg" /></navigator></swiper-item>
+    <swiper-item ><navigator><image  mode="widthFix" src="https://img.alicdn.com/simba/img/TB1tReXzUz1gK0jSZLeSuv9kVXa.jpg"/></navigator></swiper-item>
+    <swiper-item ><navigator><image  mode="widthFix" src="../../img/true.jpg"/></navigator></swiper-item>
+    <swiper-item ><navigator><image  mode="widthFix" src="../../img/true2.jpg" /></navigator></swiper-item>
 
 </swiper>
   <!-- 轮播图结束 -->
@@ -18,62 +18,56 @@
 <view class="index_cate"  >
   <navigator url="../category/index">
     <view>
-      <image mode="widthFix" src="../../icons/fenlei.png"></image>
-      分类
+      <image mode="widthFix" src="../../icons/car (2).png"></image>
+      公交车
     </view>
   </navigator>
   <navigator>
     <view>
-      <image mode="widthFix" src="../../icons/chaoshi.png"></image>
-      超市
+      <image mode="widthFix" src="../../icons/扫一扫.png"></image>
+      扫一扫 
     </view>
   </navigator>
   <navigator>
     <view>
-      <image mode="widthFix" src="../../icons/miaosha.png"></image>
-      秒杀
+      <image mode="widthFix" src="../../icons/自行车.png" style="margin-bottom:25rpx"></image>
+      自行车
     </view>
   </navigator>
   <navigator>
     <view>
-      <image mode="widthFix" src="../../icons/muyinpng.png"></image>
-      母婴
+      <image mode="widthFix" src="../../icons/car (4).png"></image>
+      列车时刻
+    </view>
+  </navigator>
+  <navigator url="../category/index">
+    <view>
+      <image mode="widthFix" src="../../icons/扫码.png" style="margin-top:20rpx"></image>
+      多城扫码
+    </view>
+  </navigator>
+  <navigator>
+    <view>
+      <image mode="widthFix" src="../../icons/查询.png"></image>
+      票价查询
+    </view>
+  </navigator>
+  <navigator>
+    <view>
+      <image mode="widthFix" src="../../icons/car (7).png"></image>
+      便民服务
+    </view>
+  </navigator>
+  <navigator>
+    <view>
+      <image mode="widthFix" src="../../icons/火车站.png"></image>
+      火车站
     </view>
   </navigator>
 </view>
 
   <!-- 导航结束 -->
-  <!-- 楼层开始 -->
 
-  <view class="index_floor clear_fix">
-    <view class="floor_group clear_fix">
-      <view class="floor_title clear_fix">
-        优选好品
-      </view>
-      <view class="floor_list clear_fix">
-        <navigator  bindtap="toOrder" url="../order/index.wxml"><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i3/79200401/TB28DloX5C9MuFjSZFoXXbUzFXa_!!79200401.jpg_500x500q90.jpg" ></image></navigator>
-        <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i4/319960493/TB2QSYcc9tYBeNjSspkXXbU8VXa_!!319960493.jpg_500x500q90.jpg"></image></navigator>
-        <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i1/57256200/TB2oZ.ts77mBKNjSZFyXXbydFXa_!!57256200.jpg_500x500q90.jpg"></image></navigator>
-        <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i1/3593596905/O1CN01cysdHu20sXOAMz7QN_!!3593596905.jpg_500x500q90.jpg"></image></navigator>
-        <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i2/773210900/O1CN014T8dHB1IWF31Bbbd1_!!0-item_pic.jpg_500x500q90.jpg"></image></navigator>
-        <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i1/2772657877/O1CN01TFQcl4283iLlEsZq2_!!2772657877.jpg_500x500q90.jpg"></image></navigator>
-      </view>
-    </view>
-    <view class="floor_group clear_fix">
-      <view class="floor_title clear_fix">
-        优选好品
-      </view>
-      <view class="floor_list clear_fix">
-        <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i3/23558426/O1CN01gafmuE2C79oxkNlDd_!!0-item_pic.jpg_500x500q90.jpg" ></image></navigator>
-        <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i1/661967230/O1CN01658bld23HO5XeRrGS_!!0-item_pic.jpg_500x500q90.jpg"></image></navigator>
-        <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i3/2360178258/O1CN01zD5UBg2AsDINq8C9m_!!0-item_pic.jpg_500x500q90.jpg"></image></navigator>
-        <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i3/TB1UH0xHpXXXXcjaXXXXXXXXXXX_!!0-item_pic.jpg_500x500q90.jpg"></image></navigator>
-        <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i2/1912881107/O1CN01yHGslW1K3313eSUKc_!!1912881107.jpg_500x500q90.jpg"></image></navigator>
-        <navigator><image mode = "widthFix" src = "https://gw.alicdn.com/bao/uploaded/i1/156445588/O1CN01rYCK9n1r9LiF0kavx_!!156445588.jpg_500x500q90.jpg"></image></navigator>
-      </view>
-    </view>
-  </view>
-  <!-- 楼层结束 -->
 
 
 </view>

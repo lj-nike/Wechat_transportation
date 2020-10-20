@@ -120,7 +120,7 @@ page {
 .user_content .user_main .about_us .contact_wrap {
   border-bottom: 2rpx solid #ccc;
 }
-.user_content .user_main .about_us .contact_wrap .contact {
+.user_content .user_main .about_us .contact_wrap .contact navigator {
   display: flex;
   justify-content: space-between;
   padding: 15rpx;
@@ -140,3 +140,10 @@ page {
   border: 1rpx #ccc;
   border-radius: 20rpx;
 }
+
+
+.option{
+  width: 65rpx;
+  height: 65rpx;
+}
+

@@ -1,119 +1,58 @@
 /* pages/cart/index.wxss */
 page{
     padding-bottom: 90rpx;
-}
-.cart_title{
-    padding: 20rpx;
-    font-size: 36rpx;
-    color: var(--themeColor);
-    border-top: 1rpx solid currentColor;
-    border-bottom: 1rpx solid currentColor;
-}
-.cart_main{
-    margin: 10rpx 0;
-}
-.cart_main .cart_item{
-    display: flex;
-    padding: 10rpx;
-    border: 2rpx solid #ccc;
-    margin: 10rpx 0;
-}
-.cart_main .cart_item .cart_chk_wrap{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.cart_main .cart_item .cart_img_wrap
-{
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cart_main .cart_item .cart_img_wrap image{
-    width: 80%;
-}
-.cart_main .cart_item .cart_info_wrap{
-    flex: 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.cart_main .cart_item .cart_info_wrap .goods_name{
-    
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2; 
-    color: #666;
-}
-.cart_main .cart_item .cart_info_wrap .goods_price_wrap{
-    display: flex;
-    justify-content: space-between;
-}
-.cart_main .cart_item .cart_info_wrap .goods_price_wrap .goods_price{
-    color: var(--themeColor);
-    font-size: 34rpx;
-}
-.cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_num_tool{
-    display: flex;
-}
-.cart_main .cart_item .cart_info_wrap .goods_price_wrap .num_edit{
-    display: flex;
-    width: 55rpx;
-    height: 55rpx;
-    /* line-height: 55rpx; */
-    justify-content: center;
-    align-items: center;
-    border: 1rpx solid #ccc;
-
-}
-.cart_main .cart_item .cart_info_wrap .goods_price_wrap .goods_num{
-    display: flex;
-    width: 55rpx;
-    height: 55rpx;
-    /* line-height: 55rpx; */
-    justify-content: center;
-    align-items: center;
-    font-size: 40rpx;
-}
-.footer_tool{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 90rpx;
-    background-color: #fff;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    border-top: 1rpx solid #ccc;
-}
-.footer_tool .all_chk_wrap{
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer_tool .total_price_wrap{
-    flex: 5;
-    text-align: right;
-}
-.footer_tool .total_price_wrap .total_price text{
-    color: var(--themeColor);
-    font-size: 32rpx;
-}
-.footer_tool .order_pay_wrap{
-    flex: 2;
     background-color: var(--themeColor);
-    color: #fff;
-    font-size: 32rpx;
-    font-weight: 600;
+}
+.container{
+    width: 100%;
+    height: 800rpx;
+    
+    /* background-color: yellow; */
+}
+.container .card{
     display: flex;
-    justify-content: center;
+    width: 90%;
+    height: 200rpx;
+    border-radius: 20rpx;
+    margin: 40rpx auto;
+    /* background-color: turquoise; */
+    /* text-align: center; */
     align-items: center;
+    justify-content: center; 
+}
+.container .card text{
+    font-size: x-large;
+    color: white;
+}
+
+.container .Code_img{
+
+    width: 90%;
+    height: 600rpx;
+    border-radius: 20rpx;
+    margin: 20rpx auto;
+    /* background-color: tomato; */
+    text-align: center;
+    overflow: hidden;
+}
+.container .Code_img image{
+    width: 100%;
     height: 100%;
 }
 
+.container .update{
+    display: flex;
+    width: 100%;
+    height: 80rpx;
+    color: white;
+    text-align: center;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+}
+.container .update image{
+    /* margin: 10rpx 0; */
+    width: 50rpx;
+    height: 50rpx;
+    
+}
