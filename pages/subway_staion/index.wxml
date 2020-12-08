@@ -1,0 +1,85 @@
+<!--pages/subway_staion/index.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset" class='form-content'>
+    <view class='flex-box' data-id='出发城市'>
+    <view class='flex-box-header'>所在城市:</view>
+    <view class="flex-box-content">
+    <input name='beginCity' value='{{begin}}' disabled='disabled' placeholder="" bindtap='bindBeginCityView' class='input-city'/>
+    </view>
+    </view>
+
+    <view class="flex-box" data-id='目的城市'>
+    <view class='flex-box-header'>地铁线路:</view>
+    <view class="flex-box-content">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+                {{array[index-1]}}
+            </view>
+        </picker>
+        <!-- <input name='endCity' value='{{end}}' placeholder="" disabled='disabled' bindtap='bindEndCityView' class='input-city'/> -->
+    </view>
+    </view>
+
+    <view class="btn-area">
+    <button formType="submit" class='btn-query'>查询</button>
+    </view>
+</form>
+<view class="log-list tr" style="margin:20rpx 30rpx">
+<text class="item">起点</text>
+<text  class="item">首班车</text >
+<text  class="item">末班车</text >
+<text  class="item">换乘</text >
+<text  class="item">终点站</text >
+</view>
+<scroll-view scroll-y class="scroll">
+    <view class="log-list">
+        <text class="item" wx:if="{{list1.startstation}}">{{list1.startstation}}</text>
+        <text class="item" wx:else>--</text>
+        <text class="item" wx:if="{{list1.starttime}}">{{list1.starttime}}</text>
+        <text class="item" wx:else>--</text>
+        <text class="item" wx:if="{{list1.endtime}}">{{list1.endtime}}</text>
+        <text class="item" wx:else>--</text>
+        <text class="item">--</text>
+        <text class="item" wx:if="{{list1.endstation}}">{{list1.endstation}}</text>
+        <text class="item" wx:else>--</text>
+
+    </view>
+    <view wx:for="{{line1}}" class="log-list" wx:key="key" style="border-color:var(--themeColor)">
+        <text class="item">{{item.station}}</text>
+        <text class="item">--</text>
+        <text class="item">--</text>
+        <text wx:if="{{item.subway}}" class="item">{{item.subway}}</text>
+        <text wx:else class="item">--</text>
+        <text class="item">--</text>
+    </view>
+</scroll-view>  
+
+
+
+<view class="log-list tr" style="margin:20rpx 30rpx;background-color:#fc5531;border-color:#fc5531">
+<text class="item">起点</text>
+<text  class="item">首班车</text >
+<text  class="item">末班车</text >
+<text  class="item">换乘</text >
+<text  class="item">终点站</text >
+</view>
+<scroll-view scroll-y class="scroll" style="margin-top:30rpx">
+    <view class="log-list" style="border-color:#fc5531">
+        <text class="item" wx:if="{{list2.startstation}}">{{list2.startstation}}</text>
+        <text class="item" wx:else>--</text>
+        <text class="item" wx:if="{{list2.starttime}}">{{list2.starttime}}</text>
+        <text class="item" wx:else>--</text>
+        <text class="item" wx:if="{{list2.endtime}}">{{list2.endtime}}</text>
+        <text class="item" wx:else>--</text>
+        <text class="item">--</text>
+        <text class="item" wx:if="{{list2.endstation}}">{{list2.endstation}}</text>
+        <text class="item" wx:else>--</text>
+    </view>
+<view wx:for="{{line2}}" class="log-list" wx:key="key" style="border-color:#fc5531;">
+    <text class="item">{{item.station}}</text>
+        <text class="item">--</text>
+        <text class="item">--</text>
+        <text wx:if="{{item.subway}}" class="item">{{item.subway}}</text>
+        <text wx:else class="item">--</text>
+        <text class="item">--</text>
+</view>
+</scroll-view>

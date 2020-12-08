@@ -1,0 +1,56 @@
+<form bindsubmit="formSubmit" bindreset="formReset" class='form-content'>
+    <view class='flex-box' data-id='出发城市'>
+    <view class='flex-box-header'>出发城市</view>
+    <view class="flex-box-content">
+    <input name='beginCity' value='{{begin}}' disabled='disabled' placeholder="" bindtap='bindBeginCityView' class='input-city'/>
+    </view>
+    </view>
+
+    <view class="flex-box" data-id='目的城市'>
+    <view class='flex-box-header'>目的城市</view>
+    <view class="flex-box-content">
+    <input name='endCity' value='{{end}}' placeholder="" disabled='disabled' bindtap='bindEndCityView' class='input-city'/>
+    </view>
+    </view>
+
+    <view class="flex-box">
+    <view class='flex-box-header'>出发日期</view>
+    <picker mode="date" name='leaveDate' class='flex-box-content-pricker' value="{{date}}" start="2018-01-01" end="2019-09-01" bindchange="bindDateChange" >
+    <view class='input-city'>{{date}}</view>
+    </picker>
+    </view>
+
+    <view class="btn-area">
+    <button formType="submit" class='btn-query'>查询</button>
+    </view>
+</form>
+
+<scroll-view class="container">
+    <!-- <view class="ticket" wx:for="{{trains}}" wx:key="key">
+        <view class="ticket_top">
+            <view class="time">
+                <view class="start">
+                    <view class="start_time">{{item["火车列车出发时间"]}}</view>
+                    <view class="start_poi">{{item.出发站点名称}}</view>
+                </view>
+                <view class="info">
+                    <view class="train">{{item.火车列车车次}}</view>
+                    <view class="during">时长{{item.火车运行时长}}</view>
+                </view>
+                <view class="end">
+                    <view class="end_time">{{item.火车列车抵达时间}}</view>
+                    <view class="end_poi">{{item.终点站点名称}}</view>
+                </view>
+            </view>
+            <view class="money">
+                <text>¥{{item.火车列车票价余票实体.二等座.票价}}</text>
+            </view>
+        </view>
+        <view class="ticket_bottom">
+            <text>一等座:{{item.火车列车票价余票实体.一等座.余票}}</text>
+            <text>二等座:{{item.火车列车票价余票实体.二等座.余票}}</text>
+            <text wx:if="{{}}">无座:{{}}</text>
+            <text wx:else>无座:无</text>
+        </view>
+    </view> -->
+</scroll-view>

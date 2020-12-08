@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="content">
+    <view class="head">
+        <text>火车票</text>
+    </view>
+        <view class="station">
+
+        </view>
+        <view class="date"></view>
+        <view class="search"></view>
+        <view class="history"></view>
+    </view>
+</view>

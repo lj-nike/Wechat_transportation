@@ -1,0 +1,11 @@
+<view class="log-list tr" >
+<text class="item">日期</text>
+<text  class="item">账户金额</text >
+</view>
+<scroll-view scroll-y >
+<view wx:for="{{bills}}" wx:for-item="log" class="log-list" wx:key="key">
+    <text class="item">{{log.date}}</text>
+    <text class="item" wx:if="{{log.money<0}}" style="color:red;font-weight:bold;font-size:large">{{log.money}}</text>
+    <text class="item" wx:else style="color:green;font-weight:bold;font-size:large">{{log.money}}</text>
+</view>
+</scroll-view>  

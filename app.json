@@ -1,27 +1,40 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/category/index",
-    "pages/goods_list/index",
-    "pages/goods_detail/index",
     "pages/cart/index",
-    "pages/collect/index",
     "pages/order/index",
     "pages/search/index",
     "pages/user/index",
     "pages/feedback/index",
     "pages/login/index",
-    "pages/auth/index",
-    "pages/chat/chat",
-    "pages/chat_index/chat_index"
-
+    "pages/tickets/index",
+    "pages/map/index",
+    "pages/trans/index",
+    "pages/newsMore/index",
+    "pages/ticket_check/index",
+    "pages/about/index",
+    "pages/invite/index",
+    "pages/citys/index",
+    "pages/myWallet/index",
+    "pages/ride/index",
+    "pages/trip/index",
+    "pages/running/index",
+    "pages/run_start/index",
+    "pages/run_logs/index",
+    "pages/bills/index",
+    "pages/saleCards/index",
+    "pages/pay_manage/index",
+    "pages/bus_station/index",
+    "pages/subway_staion/index",
+    "pages/2048/2048",
+    "pages/newsDetail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#1470e9",
     "navigationBarTitleText": "万维通",
-    "navigationBarTextStyle": "white"
-    
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
   },
   "tabBar": {
     "color": "black",
@@ -43,16 +56,26 @@
         "selectedIconPath": "img/Code.png"
       },
       {
+        "pagePath": "pages/2048/2048",
+        "text": "游戏",
+        "iconPath": "icons/game.png",
+        "selectedIconPath": "icons/gameSelect.png"
+      },
+      {
         "pagePath": "pages/user/index",
         "text": "我的",
         "iconPath": "icons/my.png",
         "selectedIconPath": "icons/my-o.png"
       }
       
+      
     ]
   },
-  
-    
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "permission":{
+    "scope.userLocation":{
+      "desc":"跑步打卡需要使用你的位置信息"
+    }
+  }
 }

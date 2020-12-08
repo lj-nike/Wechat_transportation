@@ -33,7 +33,19 @@ App({
 
   globalData: {
     userInfo: null,
-    host:'http://127.0.0.1:7001'//最好用局域网ip
+    host:'http://127.0.0.1:7001',
+    trainBeginCity: '杭州',
+    trainEndCity: '北京',
+    userInfo: null,
+    range_value: 100,                  //跑步半径
+    number_value: 2,                    //签到点个数
+    r_value: 100 / 6,                     //签到点范围
+    lat: 37.87059,                //跑步中心 纬度
+    lon: 112.55067,
+    money:"",
+    tickets:"",
+    login:false,
+    newsIndex:0
   },
   onShow: function(options) {
 

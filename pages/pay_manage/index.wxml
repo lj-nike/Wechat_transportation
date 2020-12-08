@@ -1,0 +1,19 @@
+<!--pages/pay_manage/index.wxml-->
+<view class="title">可选支付方式</view>
+<view class="container">
+    <view class="bank">
+        <view class="des">
+            <view>银行卡</view>
+            <view style="color:#666">去开通 {{'>'}}</view>
+            
+        </view>
+        <!-- <view class="icon">{{'>'}}</view> -->
+    </view>
+    <view class="wechat">
+        <view class="des">
+            <view>微信支付</view>
+            <view style="color:#666">去开通 {{'>'}}</view>
+        </view>
+    </view>
+</view>
+

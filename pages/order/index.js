@@ -48,9 +48,6 @@ Page({
   onShow(options) {
     const token = wx.getStorageSync("token");
     if (!token) {
-      wx.navigateTo({
-        
-      });
       return;
     }
 

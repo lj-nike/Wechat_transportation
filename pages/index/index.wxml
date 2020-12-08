@@ -1,74 +1,167 @@
 <view class="lxs_index search_input">
-	
-  <!-- 搜索框开始 -->
-  <SearchInput></SearchInput>
-  <!-- 搜索框结束 -->
-  <!-- 轮播图开始 -->
-  <!--pages/demo02/demo02.wxml-->
-<swiper  class="index_swiper" autoplay="true" circular="true" interval="2000" indicator-dots="true">
 
-    <swiper-item ><navigator><image  mode="widthFix" src="https://img.alicdn.com/simba/img/TB1tReXzUz1gK0jSZLeSuv9kVXa.jpg"/></navigator></swiper-item>
-    <swiper-item ><navigator><image  mode="widthFix" src="../../img/true.jpg"/></navigator></swiper-item>
-    <swiper-item ><navigator><image  mode="widthFix" src="../../img/true2.jpg" /></navigator></swiper-item>
+	<!-- 搜索框结束 -->
+	<!-- 轮播图开始 -->
+	<!--pages/demo02/demo02.wxml-->
+	<view class="top">
+		<view class="left">
+			<picker mode="region" bindchange="changeValue">
+				<view>
+					{{region[2]}} 
+					<text class="change_city">[切换]</text>
+				</view>
 
-</swiper>
-  <!-- 轮播图结束 -->
+				
+        		<view class="info">
+          			<text>{{info.fl}}℃ {{info.condText}} {{info.windDir}}</text>
+        		</view>
+			</picker>
+		</view>
+		<!-- <SearchInput></SearchInput> -->
+		<view class="right">
+			<image src="../../icons/会话.png"></image>
+		</view>
+	</view>
 
-  <!-- 导航开始 -->
-<view class="index_cate"  >
-  <navigator url="../category/index">
-    <view>
-      <image mode="widthFix" src="../../icons/car (2).png"></image>
-      公交车
-    </view>
-  </navigator>
-  <navigator>
-    <view>
-      <image mode="widthFix" src="../../icons/扫一扫.png"></image>
-      扫一扫 
-    </view>
-  </navigator>
-  <navigator>
-    <view>
-      <image mode="widthFix" src="../../icons/自行车.png" style="margin-bottom:25rpx"></image>
-      自行车
-    </view>
-  </navigator>
-  <navigator>
-    <view>
-      <image mode="widthFix" src="../../icons/car (4).png"></image>
-      列车时刻
-    </view>
-  </navigator>
-  <navigator url="../category/index">
-    <view>
-      <image mode="widthFix" src="../../icons/扫码.png" style="margin-top:20rpx"></image>
-      多城扫码
-    </view>
-  </navigator>
-  <navigator>
-    <view>
-      <image mode="widthFix" src="../../icons/查询.png"></image>
-      票价查询
-    </view>
-  </navigator>
-  <navigator>
-    <view>
-      <image mode="widthFix" src="../../icons/car (7).png"></image>
-      便民服务
-    </view>
-  </navigator>
-  <navigator>
-    <view>
-      <image mode="widthFix" src="../../icons/火车站.png"></image>
-      火车站
-    </view>
-  </navigator>
+	<swiper class="index_swiper" autoplay="true" circular="true" interval="2000" indicator-dots="true">
+
+		<swiper-item>
+			<navigator>
+				<image mode="widthFix" src="http://chuantu.xyz/t6/741/1607338087x992245993.jpg" />
+			</navigator>
+		</swiper-item>
+		<swiper-item>
+			<navigator>
+				<image mode="widthFix" src="http://chuantu.xyz/t6/741/1607338138x992239408.jpg" />
+			</navigator>
+		</swiper-item>
+		<swiper-item>
+			<navigator>
+				<image mode="widthFix" src="http://chuantu.xyz/t6/741/1607338172x992239408.jpg" />
+			</navigator>
+		</swiper-item>
+
+	</swiper>
+	<!-- 轮播图结束 -->
+
+	<!-- 导航开始 -->
+	<view class="index_cate">
+		<view class="top">
+			<navigator url="/pages/trans/index">
+				<view>
+					<image mode="widthFix" src="../../icons/car (2).png"></image>
+					公交车
+				</view>
+			</navigator>
+			<navigator>
+				<view bindtap="getScancode">
+					<image mode="widthFix" src="../../icons/扫一扫.png"></image>
+					扫一扫
+				</view>
+			</navigator>
+			<navigator url="/pages/map/index">
+				<view>
+					<image mode="widthFix" src="../../icons/自行车.png" ></image>
+					自行车
+				</view>
+			</navigator>
+			<navigator>
+				<view>
+					<image mode="widthFix" src="../../icons/car (4).png"></image>
+					列车时刻
+				</view>
+			</navigator>
+		</view>
+		<view class="top">
+			<navigator url="/pages/run_start/index">
+				<view>
+					<image mode="widthFix" src="/icons/running.png"></image>
+					跑步运动
+				</view>
+			</navigator>
+			<navigator url="/pages/ticket_check/index">
+				<view>
+					<image mode="widthFix" src="../../icons/查询.png"></image>
+					票价查询
+				</view>
+			</navigator>
+			<navigator url="/pages/subway_staion/index">
+				<view>
+					<image mode="widthFix" src="../../icons/火车站.png"></image>
+					地铁查询
+				</view>
+				
+			</navigator>
+			<navigator>
+				<view>
+					<image mode="widthFix" src="../../icons/car (7).png" ></image>
+					便民服务
+				</view>
+			</navigator>
+		</view>
+		
+	</view>
+
+	<!-- 导航结束 -->
+
+	<!-- 重要通知版块 -->
+	<view class="message">
+		<image src="http://chuantu.xyz/t6/741/1607243719x992239408.jpg" mode="scaleFill"></image>
+	</view>
+
+	<view class="news_container">
+		<view class="news_top">
+			<text class="title">地铁资讯</text>
+			<text bindtap="newsMore">查看更多</text>
+		</view>
+		
+		<view class="news">
+			<view class="news_left">
+				<view class="news_content" bindtap="getNews">
+					<view class="content_title" ><text>{{news[0].title}}</text></view>
+					<view class="words"><text>{{news[0].content}}</text></view>
+				</view>
+				<view class="intro">
+					<text class="source">{{news[0].src}}</text>
+					<text class="time">{{news[0].date}} {{news[0].minute}}</text>
+				</view>
+			</view>
+			<view class="news_right">
+				<image src="{{news[0].pic}}" mode="scaleToFill"></image>
+			</view>
+			
+		</view>
+		<view class="news">
+			<view class="news_left">
+				<view class="news_content" bindtap="getNews2" id="{{arr[0]}}">
+					<view class="content_title" ><text>{{news[1].title}}</text></view>
+					<view class="words"><text>{{news[1].content}}</text></view>
+				</view>
+				<view class="intro">
+					<text class="source">{{news[1].src}}</text>
+					<text class="time">{{news[1].date}} {{news[1].minute}}</text>
+				</view>
+			</view>
+			<view class="news_right">
+				<image src="{{news[1].pic}}" mode="scaleToFill"></image>
+			</view>
+			
+		</view>
+		<view class="news">
+			<view class="news_left">
+				<view class="news_content" bindtap="getNews3">
+					<view class="content_title" ><text>{{news[2].title}}</text></view>
+					<view class="words"><text>{{news[2].content}}</text></view>
+				</view>
+				<view class="intro">
+					<text class="source">{{news[2].src}}</text>
+					<text class="time">{{news[2].date}} {{news[2].minute}}</text>
+				</view>
+			</view>
+			<view class="news_right">
+				<image src="{{news[2].pic}}" mode="scaleToFill"></image>
+			</view>
+			
+		</view>
+	</view>
 </view>
-
-  <!-- 导航结束 -->
-
-
-
-</view>
-  

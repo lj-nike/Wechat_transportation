@@ -24,25 +24,46 @@
 <view class="user_content">
     <view class="user_main">
         
-
+        <view class="user_top">
+            <view class="left" bindtap="go_to_wallet">
+                <view class="number">
+                    <text wx:if="{{user.money}}">{{user.money}}.00</text>
+                    <text wx:else style="font-size:30rpx;color:#ccc">未登录</text>
+                </view>
+                <view class="info" >
+                    
+                    <text>余额</text>
+                </view>
+            </view>
+            <view class="right" bindtap="go_to_ride">
+                <view class="number">
+                    <text wx:if="{{user.tickets}}">{{user.tickets}}张</text>
+                    <text wx:else style="font-size:30rpx;color:#ccc">未登录</text>
+                    
+                </view>
+                <view class="info">
+                    <text>骑车卡</text>
+                </view>
+            </view>
+        </view>
         <!-- 订单 -->
         <view class="order_wrap">
             <!-- <view class="ordertitle"></view> -->
             <view class="content">
-                <navigator class="" open-type="navigate" url="../order/index">
+                <navigator class=""  url="/pages/trip/index">
                     <view ><image  class="option" src="../../img/position.png"></image></view>
                         <view class="order_name">我的行程</view>  
                 </navigator>
-                <navigator class="" open-type="navigate" url="../order/index">
+                <navigator class=""  url="/pages/bills/index">
                     <view ><image  class="option" src="../../img/Zhifu.png"></image></view>
                     <view class="order_name">交易明细</view>
                     
                 </navigator>
-                <navigator class="" open-type="navigate" url="../order/index">
+                <navigator class=""  url="/pages/saleCards/index">
                     <view ><image  class="option" src="../../img/Fapiao.png"></image></view>
-                    <view class="order_name">我的发票</view>
+                    <view class="order_name">我的卡券</view>
                 </navigator>
-                <navigator class="" open-type="navigate" url="../order/index">
+                <navigator class=""  url="/pages/pay_manage/index">
                     <view ><image  class="option" src="../../img/Zhifu2.png"></image></view>
                     <view class="order_name">支付管理</view>
                 </navigator>
@@ -52,9 +73,12 @@
         </view>
 
         <!-- 售后地址 -->
-        <view class="shouhuo_wrap">
-            卡包管理
-        </view>
+        <navigator url="/pages/run_logs/index">
+            <view class="shouhuo_wrap" style=""> 
+                跑步日志
+            </view>
+        </navigator>
+        
         <view class="about_us">
             <view class="contact_wrap">
                 <view class="contact">
@@ -69,21 +93,35 @@
                     
                 </view>
             </view>
-            <navigator >
+            <navigator url="../invite/index">
             <view class="yijian" >
                 邀请好友
             </view>
             </navigator>
             
-    
-            <view class="guanyu">
-                关于我们
-            </view>
+            <navigator url="../about/index">
+                <view class="guanyu">
+                    关于我们
+                </view>
+            </navigator>
+            
         </view>
        
 
         <view class="tuijian">
-            把应用推荐给好盆友吧
+            把小程序推荐给好盆友吧
         </view>
     </view>
 </view>
+<!-- 
+
+    接口：
+    1.在登录界面点击登录时请求用户所有数据并保存在wx.localStorageSync里面
+    2.点击余额进行充值的时候向服务器提交充值金额，服务器需单独修改用户金额然后返回新的用户金额进行渲染
+    3.点击乘车券（即月卡）点击购买时向服务提交购买的乘车券数量，服务器单独修改并返回新的乘车券数量进行渲染
+    4.我的行程，在个人中心登陆时已经得到数据，可以直接渲染，我的行程中包含了起点终点，开始时间和结束时间
+    5.交易明细里面包含充值余额和充值乘车券的记录，分别要包含充值金额和时间，时间由后端进行保存
+    6.我的发票这边待定
+    7.支付管理接口，用户添加银行卡，服务器需要记录用户银行卡信息（卡号，银行，密码）
+    8.帮助反馈，用户提交文字描述和图片，后端进行处理并返回处理的文字描述
+ -->

@@ -1,0 +1,23 @@
+<scroll-view class="container">
+    <view class="ticket" wx:for="{{userRides}}" wx:key="key">
+        <view class="ticket_top">
+            <view class="time">
+                <view class="start">
+                    <view class="start_time">{{item.starTime}}</view>
+                    <view class="start_poi">{{item.startLocation}}</view>
+                </view>
+                <view class="info">
+                    <view class="train">距离{{item.distance}}km</view>
+                    <view class="during" decode="{{true}}">{{'<'}}---------{{'>'}}</view>
+                </view>
+                <view class="end">
+                    <view class="end_time">{{item.stopTime}}</view>
+                    <view class="end_poi">{{item.stopLocation}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="ticket_bottom">
+            <text>备注：</text>
+        </view>
+    </view>
+</scroll-view>

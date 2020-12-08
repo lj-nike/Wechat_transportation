@@ -1,0 +1,15 @@
+<scroll-view class="container" scroll-x = "false" scroll-y = "true">
+    <view class="news" wx:for="{{news}}" wx:key="index">
+        <view class="top">
+            <view class="icon"><image src="../../icons/newsMore.png" mode="scaleToFill"></image></view>
+            <view class="head">
+                <view class="head_title"><text>{{item.src}}</text></view>
+                <view class="date">{{item.time}}</view>
+            </view>
+        </view>
+        <view class="title">{{item.title}}</view>
+        <view class="img"><image src="{{item.pic}}"></image></view>
+        <view class="content" decode="true">{{item.content}}</view>
+        
+    </view>
+</scroll-view>
