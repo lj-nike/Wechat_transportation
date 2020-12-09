@@ -1,6 +1,4 @@
 {
-  "usingComponents": {
-    "SearchInput":"../../components/SearchInput/SearchInput"
-  },
-  "navigationBarTitleText": "万维通"
+  "navigationBarTitleText": "万维通",
+  "enablePullDownRefresh": false
 }

@@ -1,4 +1,5 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "新闻内容"
+  "navigationBarTitleText": "新闻内容",
+  "enablePullDownRefresh": false
 }

@@ -1,4 +1,5 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "余额充值"
+  "navigationBarTitleText": "余额充值",
+  "enablePullDownRefresh": false
 }

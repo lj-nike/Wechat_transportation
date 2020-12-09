@@ -1,4 +1,5 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "更多新闻"
+  "navigationBarTitleText": "更多新闻",
+  "enablePullDownRefresh": false
 }
