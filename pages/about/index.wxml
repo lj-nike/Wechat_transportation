@@ -1,0 +1,9 @@
+<view class="top">
+    <view class="icon"><image src="../../icons/logo.png"></image></view>
+    <view class="version"><text>v3.0.0</text></view>
+</view>
+
+<view class="bottom">
+    <view class="head"><text>扫码出行,世界随心</text></view>
+    <view class="des"><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万维通是一块便捷出行神器，提供地铁扫码乘车，公共自行车扫码租借，地铁P+R接驳停车，换乘助手，便民服务等多种便捷出行服务，同时支持地铁商圈扫码消费，各项功能陆续开放中，敬请期待！边界出行，美好生活！</text></view>
+</view>

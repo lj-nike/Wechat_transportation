@@ -1,0 +1,61 @@
+/* pages/tickets/index.wxss */
+.page{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+}
+
+.container .content{
+    margin: 0 auto;
+    width: 70%;
+    height: 400rpx;
+    background-color: fuchsia;
+    border-radius: 20rpx;
+    border-radius: 15rpx;
+    overflow: hidden;
+}
+.container .head{
+    margin: 0 10rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    background-color: dodgerblue;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 15rpx;
+}
+.container .content .station{
+    margin: 0 10rpx;
+   
+    height: 80rpx;
+    margin-bottom: 15rpx;
+    background-color: greenyellow;
+}
+.container .content .date{
+    margin: 0 10rpx;
+
+    height: 80rpx;
+    font-size: larger;
+    font-weight: bold;
+    background-color: honeydew;
+    margin-bottom: 15rpx;
+
+}
+.container .content .search{
+    margin: 0 10rpx;
+    height: 80rpx;
+    background-color: lightblue;
+    margin-bottom: 15rpx;
+
+}
+.container .content .history{
+    margin: 0 10rpx;
+
+    height: 40rpx;
+    background-color: mistyrose;
+}

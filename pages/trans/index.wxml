@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="card">
+        <text>公交服务热线:</text>
+        <text>0510-88760000</text>
+    </view>
+    <view class="Code_img">
+        <image src="{{image_list}}"></image>
+    </view>
+    <view class="update"><text bindtap="update_img">点击刷新</text><image src="../../icons/update.png"></image></view>
+</view>

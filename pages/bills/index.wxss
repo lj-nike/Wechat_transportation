@@ -1,0 +1,21 @@
+/* pages/bills/index.wxss */
+.log-list {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    /* border: 1px solid rgb(248, 248, 248);   */
+    border: 1px solid #ccc;
+    margin-bottom: 10rpx;
+  }
+  .tr{
+    margin: 10rpx;
+    font-weight: 600;
+    color: white;
+    background-color: var(--themeColor);
+  }
+  .item {
+    display: inline;
+    flex: 1;
+    text-align: center;
+  }
+  

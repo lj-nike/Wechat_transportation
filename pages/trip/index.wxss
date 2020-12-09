@@ -1,0 +1,93 @@
+.container{
+  width: 100%;
+  /* background-color: aqua; */
+}
+.container .ticket{
+  width: 91.5%;
+  height: 200rpx;
+  margin: 10rpx auto;
+  /* background-color: brown; */
+  border: 2px solid var(--themeColor);
+  border-radius: 20rpx;
+}
+.container .ticket .ticket_top{
+  display: flex;
+  width: 100%;
+  height: 70%;
+  border-bottom: 1px dashed #ccc;
+  /* background-color: burlywood; */
+}
+.container .ticket .ticket_top .time{
+  text-align: center;
+  flex: 8.5;    
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: crimson; */
+}
+.container .ticket .ticket_top .time .start{
+  flex: 1;
+  height: 100%;
+  /* background-color: darkgray; */
+}
+.container .ticket .ticket_top .time .start .start_time{
+  width: 100%;
+  height: 50%;
+  line-height: 70rpx;
+  /* background-color: hotpink; */
+}
+.container .ticket .ticket_top .time .start .start_poi{
+  width: 100%;
+  height: 50%;
+  line-height: 70rpx;
+  /* background-color: #008c8c; */
+}
+.container .ticket .ticket_top .time .info{
+  flex: 1;
+  height: 100%;
+  /* background-color: darkmagenta; */
+}
+.container .ticket .ticket_top .time .info .train{
+  width: 100%;
+  height: 50%;
+  line-height: 70rpx;
+  /* background-color: hotpink; */
+}
+.container .ticket .ticket_top .time .info .during{
+  width: 100%;
+  height: 50%;
+  line-height: 70rpx;
+  /* background-color: #008c8c; */
+}
+.container .ticket .ticket_top .time .end{
+  flex: 1;
+  height: 100%;
+  /* background-color: gold; */
+}
+.container .ticket .ticket_top .time .end .end_time{
+  width: 100%;
+  height: 50%;
+  line-height: 70rpx;
+  /* background-color: hotpink; */
+}
+.container .ticket .ticket_top .time .end .end_poi{
+  width: 100%;
+  height: 50%;
+  line-height: 70rpx;
+  /* background-color: #008c8c; */
+}
+
+.container .ticket .ticket_bottom{
+  display: flex;
+  text-align: left;
+  width: 85%;
+  height: 30%;
+  line-height: 60rpx;
+  /* background-color: cornflowerblue; */
+}
+.container .ticket .ticket_bottom text{
+  flex: 1;
+  text-align: left;
+  font-size:20rpx;
+  text-indent: 20rpx;
+}

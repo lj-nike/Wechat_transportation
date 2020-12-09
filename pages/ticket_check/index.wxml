@@ -1,0 +1,58 @@
+<form bindsubmit="formSubmit" bindreset="formReset" class='form-content'>
+    <view class='flex-box' data-id='出发城市'>
+    <view class='flex-box-header'>出发城市</view>
+    <view class="flex-box-content">
+    <input name='beginCity' value='{{begin}}' disabled='disabled' placeholder="" bindtap='bindBeginCityView' class='input-city'/>
+    </view>
+    </view>
+
+    <view class="flex-box" data-id='目的城市'>
+    <view class='flex-box-header'>目的城市</view>
+    <view class="flex-box-content">
+    <input name='endCity' value='{{end}}' placeholder="" disabled='disabled' bindtap='bindEndCityView' class='input-city'/>
+    </view>
+    </view>
+
+    <view class="flex-box">
+    <view class='flex-box-header'>出发日期</view>
+    <picker mode="date" name='leaveDate' class='flex-box-content-pricker' value="{{date}}" start="2018-01-01" end="2019-09-01" bindchange="bindDateChange" >
+    <view class='input-city'>{{date}}</view>
+    </picker>
+    </view>
+
+    <view class="btn-area">
+    <button formType="submit" class='btn-query'>查询</button>
+    </view>
+</form>
+
+<scroll-view class="container">
+    <view class="ticket" wx:for="{{trains}}" wx:key="key">
+        <view class="ticket_top">
+            <view class="time">
+                <view class="start">
+                    <view class="start_time">{{item.start_time}}</view>
+                    <view class="start_poi">{{item.start_poi}}</view>
+                </view>
+                <view class="info">
+                    <view class="train">{{item.train}}</view>
+                    <view class="during">时长{{item.during}}</view>
+                </view>
+                <view class="end">
+                    <view class="end_time">{{item.end_time}}</view>
+                    <view class="end_poi">{{item.end_poi}}</view>
+                </view>
+            </view>
+            <view class="money">
+                <text>{{item.second_sit_money}}</text>
+            </view>
+        </view>
+        <view class="ticket_bottom">
+            <text wx:if="{{item.best_sit}}">特等座:{{item.best_sit}}</text>
+            <text wx:else>特等座:无</text>
+            <text wx:if="{{item.first_sit}}">一等座:{{item.first_sit}}</text>
+            <text wx:else>一等座:无</text>
+            <text wx:if="{{item.second_sit}}">二等座:{{item.second_sit}}</text>
+            <text wx:else>二等座:无</text>
+        </view>
+    </view>
+</scroll-view>

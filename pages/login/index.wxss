@@ -1,0 +1,31 @@
+/* pages/login/index.wxss */
+page{
+    width: 100%;
+    height: calc(100vh);
+    padding: 0;
+
+}
+.back{
+    
+    width: 100%;
+    /* height; */
+    height: 100%;
+    position: relative;
+    background-image: url("https://i.loli.net/2020/04/06/V7U2C45wWBKsQxz.jpg");
+    background-size: 100% 100%;
+
+}
+button{
+    position: absolute;
+    /* float: left; */
+    /* top: 30rpx; */
+    /* left: 28%;
+    top: 10%; */
+    /* margin-top: 40rpx; */
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    width: 70%;
+    font-size: 30rpx;
+ 
+}
