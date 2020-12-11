@@ -154,7 +154,7 @@ Page({
   },
   //打卡 判断到下一个点的距离是否小于dis
   check() {
-
+    let that = this;
     var i = Number(this.data.finish) + 1
     if (i === Number(this.data.number_value) ) {
   
@@ -175,7 +175,7 @@ Page({
     })
     console.log(dis);
     wx.showToast({
-      title: String(dis),
+      title: String(that.data.meters)+"米",
       icon:'success',
       duration:2000,
     })
