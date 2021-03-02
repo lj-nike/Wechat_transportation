@@ -19,6 +19,7 @@ Page({
     var myAmapFun = new amapFile.AMapWX({ key: '47f1e3e23c6f26e7573ec72a4c318cad' });
     myAmapFun.getWeather({
       success:  (data)=> {
+        console.log(data);
         //成功回调
         this.setData({
           city: data.city.data,

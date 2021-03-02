@@ -1,0 +1,22 @@
+<!--pages/bicycle/index.wxml-->
+<view class="card" bindtap="endInterval">
+    <text>绿色出行,从我做起</text>
+</view>
+
+<view class="container">
+
+    <view class="icon">
+        <image mode="scaleToFill" src="/icons/bicycle.png"></image>
+    </view>
+    <view class="ride_info">
+        <view class="city">城市：{{city}}</view>
+        <view class="nickName">用户：{{name}}</view>
+        
+        <view class="startTime">状态：骑行中  {{timing}}</view>
+        <view class="startTime">开始时间：{{starTime}}</view>
+        <view class="pay">
+            <button bindtap="pay" id="1">余额支付</button>
+            <button bindtap="pay" id="2">骑行卡支付</button>
+        </view>
+    </view>
+</view>

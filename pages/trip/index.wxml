@@ -1,5 +1,5 @@
 <scroll-view class="container">
-    <view class="ticket" wx:for="{{userRides}}" wx:key="key">
+    <view class="ticket" wx:for="{{userRides}}" wx:key="key" style="border-color:{{item.color}}">
         <view class="ticket_top">
             <view class="time">
                 <view class="start">
@@ -17,7 +17,7 @@
             </view>
         </view>
         <view class="ticket_bottom">
-            <text>备注：</text>
+            <text>备注：{{item.log}}</text>
         </view>
     </view>
 </scroll-view>

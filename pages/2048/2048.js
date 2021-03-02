@@ -1,6 +1,6 @@
 var Board = require("./grid.js");
 var Main = require("./main.js");
-
+const app = getApp();
 Page({ 
   data: {
     hidden: false,
@@ -36,7 +36,13 @@ Page({
     this.setData({
       over: true 
     });
-  
+    wx.request({
+      url: 'http://1dnhkei9.xiaomy.net:40895/addEnergy?userName='+app.globalData.userInfo.nickName+'&energy=5',
+      method:"POST",
+      success:function(res){
+          console.log(res.data)
+      }
+    })
     if (this.data.score >= 2048) {
       this.setData({ 
         endMsg: '恭喜达到2048！'

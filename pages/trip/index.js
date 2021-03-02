@@ -1,11 +1,13 @@
 // pages/trip/index.js
+const app = getApp();
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        userRides:[]
+        userRides:[],
+        log:""
     },
 
     /**
@@ -27,22 +29,32 @@ Page({
      */
     onShow: function () {
         let that = this;
-        wx.getStorage({
-          key: 'user',
-          success:function(res){
-            console.log(res)
-            let rides = res.data.userRides;
-            for(let i  = 0 ;i < res.data.userRides.length; i++){
-              console.log(rides[i]);
-              rides[i].starTime = rides[i].starTime.substring(10,19);
-              rides[i].stopTime = rides[i].stopTime.substring(10,19);
+        if(app.globalData.login){
+          wx.getStorage({
+            key: 'user',
+            success:function(res){
+              console.log(res)
+              let rides = res.data.userRides;
+              for(let i  = 0 ;i < res.data.userRides.length; i++){
+              
+                rides[i].starTime = rides[i].starTime.substring(10,19);
+                rides[i].stopTime = rides[i].stopTime.substring(10,19);
+                if(rides[i].flag == 1){
+                  rides[i].log = "余额消费"
+                  rides[i].color = "var(--themeColor)";
+                }else{
+                  rides[i].log = "骑行卡消费";
+                  rides.color = "#fc5531";
+                }
+              }
+              
+              that.setData({
+                  userRides:rides.reverse()
+              })
             }
-            
-            that.setData({
-                userRides:rides
-            })
-          }
-        })
+          })
+        }
+        
     },
 
     /**

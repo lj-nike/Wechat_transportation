@@ -19,7 +19,7 @@ Page({
     date: "2020-2-25",
     markers: [],
     finish: -1,
-    run: true,
+    run: false,
     time: 0,
     meters: 0,
     lastlat:37.87,
@@ -131,9 +131,8 @@ Page({
           clongitude: res.longitude,
         })
         var dis = utils.getDistance(that.data.clatitude, that.data.clongitude, that.data.lastlat, that.data.lastlon)
-        
         that.setData({
-          meters: Number(that.data.meters)+dis
+          meters: Math.floor(Number(that.data.meters)+dis)
         })
       })
       

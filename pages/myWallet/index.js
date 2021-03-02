@@ -1,4 +1,5 @@
 // pages/myWallet/index.js
+const app = getApp();
 Page({
 
     data: {
@@ -43,7 +44,7 @@ recharge:function(){
         wx.request({
             url: 'http://1dnhkei9.xiaomy.net:40895/upMoney',
             data:{
-                userName:"lys",
+                userName:app.globalData.userInfo.nickName,
                 money:that.data.money,
             },
             header:{

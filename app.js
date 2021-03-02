@@ -6,13 +6,11 @@ App({
     wx.login({
       success: res => {
         if (res.code) {
-        
         } else {
           console.log('获取用户登录态失败！' + res.errMsg)
         }
       }
     })
-    // 获取用户信息
     wx.getSetting({
       success: res => {
         if (res.authSetting['scope.userInfo']) {
@@ -21,6 +19,7 @@ App({
             success: res => {
               // 可以将 res 发送给后台解码出 unionId
               this.globalData.userInfo = res.userInfo
+              console.log(this.globalData.userInfo);
               if (this.userInfoReadyCallback) {
                 this.userInfoReadyCallback(res)
               }
@@ -29,6 +28,8 @@ App({
         }
       }
     })
+    // 获取用户信息
+    
   },
 
   globalData: {

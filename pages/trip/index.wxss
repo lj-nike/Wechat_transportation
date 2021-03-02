@@ -90,4 +90,6 @@
   text-align: left;
   font-size:20rpx;
   text-indent: 20rpx;
+  color: red;
+  font-weight: bold;
 }

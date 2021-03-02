@@ -27,17 +27,17 @@
 
 		<swiper-item>
 			<navigator>
-				<image mode="widthFix" src="http://chuantu.xyz/t6/741/1607338087x992245993.jpg" />
+				<image mode="widthFix" src="http://chuantu.xyz/t6/741/1607948012x989559112.jpg" />
 			</navigator>
 		</swiper-item>
 		<swiper-item>
 			<navigator>
-				<image mode="widthFix" src="http://chuantu.xyz/t6/741/1607338138x992239408.jpg" />
+				<image mode="widthFix" src="http://chuantu.xyz/t6/741/1607948066x992239408.jpg" />
 			</navigator>
 		</swiper-item>
 		<swiper-item>
 			<navigator>
-				<image mode="widthFix" src="http://chuantu.xyz/t6/741/1607338172x992239408.jpg" />
+				<image mode="widthFix" src="http://chuantu.xyz/t6/741/1607948087x992245175.jpg" />
 			</navigator>
 		</swiper-item>
 
@@ -49,26 +49,29 @@
 		<view class="top">
 			<navigator url="/pages/trans/index">
 				<view>
-					<image mode="widthFix" src="../../icons/car (2).png"></image>
+					<image mode="widthFix" src="../../icons/car2.png"></image>
 					公交车
 				</view>
 			</navigator>
-			<navigator>
-				<view bindtap="getScancode">
-					<image mode="widthFix" src="../../icons/扫一扫.png"></image>
-					扫一扫
-				</view>
-			</navigator>
+				<navigator url="#">
+					<view bindtap="getScancode">
+					<image mode="widthFix" src="../../icons/saoyisao.png"></image>
+					扫码骑车
+					</view>
+				</navigator>
+					
+				
+			
 			<navigator url="/pages/map/index">
 				<view>
-					<image mode="widthFix" src="../../icons/自行车.png" ></image>
+					<image mode="widthFix" src="../../icons/bicycle2.png" ></image>
 					自行车
 				</view>
 			</navigator>
 			<navigator>
 				<view>
-					<image mode="widthFix" src="../../icons/car (4).png"></image>
-					列车时刻
+					<image mode="widthFix" src="../../icons/car4.png"></image>
+					公交时刻
 				</view>
 			</navigator>
 		</view>
@@ -81,20 +84,20 @@
 			</navigator>
 			<navigator url="/pages/ticket_check/index">
 				<view>
-					<image mode="widthFix" src="../../icons/查询.png"></image>
+					<image mode="widthFix" src="../../icons/search.png"></image>
 					票价查询
 				</view>
 			</navigator>
 			<navigator url="/pages/subway_staion/index">
 				<view>
-					<image mode="widthFix" src="../../icons/火车站.png"></image>
+					<image mode="widthFix" src="../../icons/huoche.png"></image>
 					地铁查询
 				</view>
 				
 			</navigator>
 			<navigator>
 				<view>
-					<image mode="widthFix" src="../../icons/car (7).png" ></image>
+					<image mode="widthFix" src="../../icons/car7.png" ></image>
 					便民服务
 				</view>
 			</navigator>
@@ -106,7 +109,7 @@
 
 	<!-- 重要通知版块 -->
 	<view class="message">
-		<image src="http://chuantu.xyz/t6/741/1607243719x992239408.jpg" mode="scaleFill"></image>
+		<image src="http://chuantu.xyz/t6/741/1607948116x989559112.jpg" mode="scaleFill"></image>
 	</view>
 
 	<view class="news_container">

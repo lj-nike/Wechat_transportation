@@ -20,9 +20,13 @@ Page({
   },
   getScancode: function() {
     var _this = this;
+    let url = "/pages/bicycle/index?city="+_this.data.region[2];
     // 允许从相机和相册扫码
     wx.scanCode({
       success: (res) => {
+        wx.navigateTo({
+          url: url,
+        })
       }
     })
  

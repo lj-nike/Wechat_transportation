@@ -26,6 +26,8 @@
 .container .top .exchange_code input{
     width: 100%;
     height: 100%;
+    border: 2px solid var(--themeColor);
+    box-sizing: border-box;
 }
 .container .top .btn_exchange{
     flex: 4;

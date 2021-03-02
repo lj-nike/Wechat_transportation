@@ -27,7 +27,8 @@
     "pages/bus_station/index",
     "pages/subway_staion/index",
     "pages/2048/2048",
-    "pages/newsDetail/index"
+    "pages/newsDetail/index",
+    "pages/bicycle/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

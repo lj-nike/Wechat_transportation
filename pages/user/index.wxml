@@ -31,8 +31,18 @@
                     <text wx:else style="font-size:30rpx;color:#ccc">未登录</text>
                 </view>
                 <view class="info" >
-                    
                     <text>余额</text>
+                    <image src="/icons/remain.png" mode="scaleToFill"></image>
+                </view>
+            </view>
+            <view class="left" bindtap="go_to_wallet">
+                <view class="number">
+                    <text wx:if="{{user.money}}" style="color:green">{{user.energy}}</text>
+                    <text wx:else style="font-size:30rpx;color:#ccc">未登录</text>
+                </view>
+                <view class="info" >
+                    <text>能量</text>
+                    <image src="/icons/energy.png" mode="scaleToFill"></image>
                 </view>
             </view>
             <view class="right" bindtap="go_to_ride">
@@ -43,6 +53,7 @@
                 </view>
                 <view class="info">
                     <text>骑车卡</text>
+                    <image src="/icons/card_remain.png" mode="scaleToFill"></image>
                 </view>
             </view>
         </view>

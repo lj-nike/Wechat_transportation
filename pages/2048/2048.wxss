@@ -177,6 +177,7 @@
 } 
 .game-over text {
   display: block;
+  font-weight: bold;
 }
 .nowScore {
   font-size: 20px;

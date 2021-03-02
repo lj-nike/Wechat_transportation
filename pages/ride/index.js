@@ -34,6 +34,7 @@ Page({
     },
     recharge:function(){
         let that = this;
+        let name = app.globalData.userInfo.nickName;
         console.log(that.data.index)
         setTimeout(function() {
         wx.showToast({
@@ -44,15 +45,15 @@ Page({
                     })
          }, 1000);
          wx.request({
-            url: 'http://1dnhkei9.xiaomy.net:40895/addTicket?userName=lys&num='+that.data.index,
+            url: 'http://1dnhkei9.xiaomy.net:40895/addTicket?userName='+name+'&num='+that.data.index,
             method:"GET",
             success:function(res){
-                console.log(res.data)
+                console.log(res.data);
+                that.setData({
+                    myCards:res.data.tickets+"张"
+                })
             }
         })
-   
-        
-            
     },
     /**
      * 生命周期函数--监听页面加载
@@ -68,9 +69,7 @@ Page({
                   })
               }
             })
-            that.setData({
-                myCards:""
-            })
+            
         }else{
             that.setData({
                 myCards:"未登录"

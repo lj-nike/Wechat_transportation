@@ -32,7 +32,7 @@
     <view class='game-over' hidden='{{!over}}'>
       <text class='nowScore'>历史最高分：{{bestScore}}</text>
       <text class='nowScore'>本次成绩：{{score}}</text>
-      <text class="nowScore">获得行程能量55</text>
+      <text class="nowScore">获得行程能量5</text>
       <text class='pro'>{{endMsg}}</text> 
     </view> 
   </view>
